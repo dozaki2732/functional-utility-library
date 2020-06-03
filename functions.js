@@ -227,8 +227,11 @@ function sortAlphabetically(input) {
       " sapporo",
       " pabst",
       " stella",
-      "" + input,
+      " " + input,
    ];
+   return listofBeerAndInput.sort(function (a, b) {
+      return a === b ? 0 : a > b ? 1 : -1;
+   });
 }
 
 // Split a String into an Array Using the split Method
