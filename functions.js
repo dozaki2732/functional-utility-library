@@ -37,9 +37,27 @@ function sliceArray(begin, end) {
 }
 
 //use slice instead of splice to remove elements from an array
-var listofBeer = ["kirin", "corona", "modelo", "sapporo", "pabst", "stella"];
+var listofBeer = [
+   " kirin",
+   " corona",
+   " modelo",
+   " sapporo",
+   " pabst",
+   " stella",
+];
 
 function removeWithSlice(begin, end) {
    let reducedArray = listofBeer.slice(begin, end);
    return reducedArray;
+}
+
+//combine two arrays using concat
+
+// function concatArrays(firstArray, secondArray)
+
+//add something to the end of an array using concat instead of push
+
+function addWithConcat(item) {
+   let newListOfBeer = listofBeer.concat(item);
+   return newListOfBeer;
 }
