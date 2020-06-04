@@ -241,12 +241,20 @@ function splitStringIntoArray(stringInput) {
 }
 
 // Combine an Array into a String Using the join Method
-
-let combinationString = str.split(/\W/).join(" ");
-console.log(combinationString);
-return combinationString;
-
+function combineArrayIntoString(array) {
+   let combinationString = array.split(/\W/).join(" ");
+   console.log(combinationString);
+   return combinationString;
+}
 // Apply Functional Programming to Convert Strings to URL Slugs
 
+function urlSlug(title) {
+   let lowerCase = title.toLowerCase();
+   let splittingUp = lowerCase.split(/\W/);
+   let filteredTitle = splittingUp.filter((item) => item != "");
+   let joiningTitle = filteredTitle.join("-");
+
+   return joiningTitle;
+}
 // Use the every Method to Check that Every Element in an Array Meets a Criteria
 // Use the some Method to Check that Any Elements in an Array Meet a Criteria
