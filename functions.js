@@ -229,13 +229,24 @@ function sortAlphabetically(input) {
       " stella",
       " " + input,
    ];
-   return listofBeerAndInput.sort(function (a, b) {
-      return a === b ? 0 : a > b ? 1 : -1;
-   });
+   return listofBeerAndInput.sort();
 }
 
-// Split a String into an Array Using the split Method
+// Split a String into an Array of Words Using the split Method
+
+function splitStringIntoArray(stringInput) {
+   let splitting = stringInput.split(/\W/);
+   console.log(splitting);
+   return splitting;
+}
+
 // Combine an Array into a String Using the join Method
+
+let combinationString = str.split(/\W/).join(" ");
+console.log(combinationString);
+return combinationString;
+
 // Apply Functional Programming to Convert Strings to URL Slugs
+
 // Use the every Method to Check that Every Element in an Array Meets a Criteria
 // Use the some Method to Check that Any Elements in an Array Meet a Criteria
