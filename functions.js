@@ -257,9 +257,9 @@ function urlSlug(title) {
    return joiningTitle;
 }
 // Use the every Method to Check that Every Element in an Array Meets a Criteria
-function checkIfGreaterThanFive(arr) {
+function checkPositive(arr) {
    let result = arr.every(function (value) {
-      value > 5;
+      value > 0;
    });
    return result;
 }
