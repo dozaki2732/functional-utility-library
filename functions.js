@@ -261,7 +261,16 @@ function checkPositive(arr) {
    let result = arr.every(function (value) {
       value > 0;
    });
+
    return result;
 }
 
 // Use the some Method to Check that Any Elements in an Array Meet a Criteria
+function checkPositiveUsingSome(arr) {
+   // Only change code below this line
+
+   let result = arr.some((elem) => elem > 0);
+
+   return result;
+   // Only change code above this line
+}
